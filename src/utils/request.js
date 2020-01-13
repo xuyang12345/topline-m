@@ -37,7 +37,7 @@ request.interceptors.request.use(
 
     // 统一添加 token
     if (user) {
-      config.headers.Autorization = `Bearer ${user}`
+      config.headers.Authorization = `Bearer ${user.token}`
     }
     return config
   },

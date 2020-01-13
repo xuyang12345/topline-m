@@ -17,7 +17,8 @@ import {
   Dialog,
   List,
   Tab,
-  Tabs
+  Tabs,
+  Popup
 } from 'vant'
 
 Vue
@@ -39,3 +40,4 @@ Vue
   .use(List)
   .use(Tab)
   .use(Tabs)
+  .use(Popup)
