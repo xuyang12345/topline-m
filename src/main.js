@@ -7,6 +7,7 @@ import 'normalize.css'
 import 'amfe-flexible'
 import './styles/index.less'
 import './utils/validation.js'
+import './utils/datetime'
 Vue.config.productionTip = false
 new Vue({
   router,

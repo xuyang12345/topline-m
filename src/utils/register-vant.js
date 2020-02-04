@@ -18,9 +18,13 @@ import {
   List,
   Tab,
   Tabs,
-  Popup
+  Popup,
+  Search,
+  Loading,
+  ImagePreview,
+  ActionSheet,
+  DatetimePicker
 } from 'vant'
-
 Vue
   .use(Button)
   .use(Cell)
@@ -41,3 +45,8 @@ Vue
   .use(Tab)
   .use(Tabs)
   .use(Popup)
+  .use(Search)
+  .use(Loading)
+  .use(ImagePreview)
+  .use(ActionSheet)
+  .use(DatetimePicker)

@@ -10,9 +10,43 @@ const routes = [
     component: Login
   },
   {
+    path: '/user/profile',
+    name: 'user-profile',
+    component: () => import('@/views/user-profile')
+  },
+  {
     path: '/user/:userId',
     name: 'user',
-    component: () => import('@/views/user')
+    component: () => import('../views/search')
+  },
+  {
+    path: '/search',
+    name: 'user',
+    component: () => import('@/views/search')
+  },
+  {
+    path: '/article/:articleId',
+    name: 'article',
+    component: () => import('@/views/article'),
+    props: true
+  },
+  {
+    // 我的作品
+    path: '/my-article',
+    name: 'my-article',
+    component: () => import('@/views/user-articles')
+  },
+  {
+    // 我的收藏
+    path: '/my-article/collect',
+    name: 'my-article-collect',
+    component: () => import('@/views/user-articles')
+  },
+  {
+    // 我的历史
+    path: '/my-article/history',
+    name: 'my-article-history',
+    component: () => import('@/views/user-articles')
   },
   {
     path: '/',
